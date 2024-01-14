@@ -51,7 +51,11 @@ namespace FirstWPFApplication
 
         private void btnGetInput_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show($"Hello there {name}!");
+            //MessageBox.Show($"Hello there {name}!");
+            lblMessage.Content = $"Hello there {name}!";
+            btnGetInput.Visibility = Visibility.Hidden;
+            txtInput.Visibility = Visibility.Hidden;
+
         }
     }
 }
